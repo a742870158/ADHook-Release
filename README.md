@@ -1,12 +1,12 @@
-# ADHook (Android 移动应用去广告与界面净化利器)
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/a742870158/ADHook-Release/main/rules/logo.png" width="108" height="108" alt="ADHook Logo" />
+  <img src="docs/logo.png" width="96" height="96" alt="ADHook Logo" />
 </p>
 
+<h1 align="center">ADHook</h1>
+
 <p align="center">
-  <b>基于 LSPosed / Xposed 框架的现代 Android 去广告与界面净化工具</b><br>
-  无需 ROOT 也能体验的所见即所得可视化屏幕拾取器 · 声明式动态规则引擎 · 深度原生无痕去广告
+  <b>基于 LSPosed / Xposed 框架的现代 Android 移动应用去广告与界面净化利器</b><br>
+  免权限所见即所得屏幕拾取器 · 5 大商业化广告联盟底层断源 · 深度原生无痕去广告
 </p>
 
 <p align="center">
@@ -18,35 +18,61 @@
 
 ---
 
+## 📸 界面预览
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%">
+      <b>📱 应用管理与深度适配</b><br><br>
+      <img src="docs/screenshots/01_home_apps.png" width="100%" alt="应用列表" />
+    </td>
+    <td align="center" width="25%">
+      <b>🛡️ 全局广告联盟总控</b><br><br>
+      <img src="docs/screenshots/02_global_sdk.png" width="100%" alt="全局广告联盟总控" />
+    </td>
+    <td align="center" width="25%">
+      <b>📋 规则管理与统管中心</b><br><br>
+      <img src="docs/screenshots/03_rules_center.png" width="100%" alt="规则中心" />
+    </td>
+    <td align="center" width="25%">
+      <b>🔍 可视化元素拾取器</b><br><br>
+      <img src="docs/screenshots/04_visual_inspector.png" width="100%" alt="屏幕拾取器" />
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 📥 下载安装
 
-请前往 [**Releases 页面**](https://github.com/a742870158/ADHook-Release/releases) 下载最新签名的正式版 APK。
+请前往 [**Releases 发版页面**](https://github.com/a742870158/ADHook-Release/releases) 下载最新正式版 APK。
 
-1. 在手机上安装 **LSPosed 框架**（推荐 Zygisk 版）；
+1. 在手机上安装支持的 **LSPosed 框架**（推荐 Magisk / KernelSU / APatch 下的 Zygisk 模式）；
 2. 安装 **ADHook.apk**；
 3. 打开 LSPosed 管理器，在「模块」中启用 **ADHook** 并勾选需要去广告的目标应用作用域；
-4. 强退目标应用重新打开即可享受纯净体验。
+4. 强退目标应用重新打开，即可享受纯净无广告体验。
 
 ---
 
 ## 🚀 核心特性
 
 ### 1. 🎛️ ADHook 规则中心 (Jetpack Compose / Material 3 原生 UI)
-- **现代声明式架构**：遵循 Material 3 设计规范，Edge-to-Edge 全沉浸式状态栏，深浅色自适应。
-- **四大核心导航**：
+- **全新原生声明式架构**：遵循 Material 3 设计规范，支持 Edge-to-Edge 全沉浸式状态栏与手势交互，深浅色模式自动适配。
+- **四大核心控制体系**：
   - **全局**：一键总控穿山甲 (Pangle)、腾讯优量汇 (GDT)、快手 (Kwad)、百度移动广告、谷歌 AdMob 等 5 大广告联盟底层断源。
-  - **规则**：支持远程规则订阅与本地规则统管。支持一键检查更新、滑动删除条目与配置导入导出。
-  - **应用**：全盘已安装应用极速搜索，深度定制适配应用优先置顶。
+  - **规则**：管理自定义规则与订阅条目，支持一键导出、导入与滑动删除。
+  - **应用**：全盘已安装应用极速搜索，深度定制适配方案优先置顶。
   - **关于**：框架运行状态、健康度诊断与版本信息。
-- **通用应用零配置自动托管**：只要在 LSPosed 作用域勾选任意应用，自动挂载底层广告联盟断源与悬浮窗拾取器。
+- **通用应用零配置自动托管**：只要在 LSPosed 作用域中勾选任意第三方应用，无需硬编码预置，自动挂载底层广告联盟断源与悬浮窗拾取器。
 
 ### 2. 🔍 原生视图可视化拾取器 (Visual Element Picker)
-- **免系统悬浮窗权限**：基于 Activity 顶层子窗口运行，不占用系统全局权限，零后台保活消耗；
-- **全新高科技准星悬浮球**：微透深空灰黑质感底色与荧光青蓝瞄准十字准星，避开侧滑冲突区，自由纵向拖拽吸附；
-- **红框高亮与层级漫游**：触摸任意 View 即时红框高亮，支持 `[ 选父级 ]` 向上回溯、`[ 选子级 ]` 精确回退、`[ 切换 ]` 贯穿层级轮转；
-- **In-View 纯内嵌模态弹窗**：点击 `[屏蔽并保存]` 展开深空暗黑科技风面板，杜绝系统 BadToken 异常；
+告别繁琐的“截图-描述-反编译猜类名-试错”，把去广告转变为**所见即所得的手机端操作**：
+- **免系统悬浮窗权限**：基于 Activity 顶层子窗口运行，不占用系统全局悬浮窗权限，零后台保活开销；
+- **高科技准星悬浮球**：微透深空灰黑质感底色与荧光青蓝瞄准十字准星，避开系统侧滑冲突区，上下自由拖拽吸附；
+- **红框高亮与层级漫游**：触摸屏幕任意 View 自动高亮，支持 **`[ 选父级 ]`** 向上扩大选区、**`[ 选子级 ]`** 精确回退、**`[ 切换 ]`** 贯穿层级轮转；
+- **In-View 纯内嵌模态弹窗**：点击 `[屏蔽并保存]` 展开暗黑科技风面板，杜绝系统 BadToken 异常与点击穿透；
 - **智能特征提取与相对深度计算**：自动提取节点文案与控件 ID，选中父级卡片时自动计算相对层级深度，彻底消除整行卡片；
-- **高危类名误杀拦截护栏**：智能阻断通用容器类名（如 `HyperCellLayout`、`FrameLayout` 等）的纯类名折叠，根绝同类条目全量消失隐患。
+- **高危类名防误杀护栏**：智能阻断通用容器类名（如 `HyperCellLayout`、`FrameLayout` 等）的纯类名折叠，根绝同类条目全量消失隐患。
 
 ---
 
@@ -69,16 +95,6 @@
 | **小米应用商店** | `com.xiaomi.market` | 开屏与全局弹窗切断、首页 Tab 隐藏顶部空白留白直接呈现「金米奖」、我的页面卡片重构撑满整行、解除跨签名覆盖安装与下载限制 |
 | **领克** | `com.lynkco.customer` | 穿透几维安全加壳、隐藏底栏 Tab 容器撑满全屏、冷启动默认直达「爱车」页、爱车页官方二手车推广背景与商品推荐横幅全净化 |
 | **什么值得买** | `com.smzdm.client.android` | 开屏物料磁盘缓存与网络拉取断流、毫秒级跳过 3 秒海报与滑动手势遮罩、切后台后台下载阻断 |
-
----
-
-## 📡 官方通用远程规则订阅
-
-你可以直接在 ADHook 的「规则」页面点击右上角 `+`，添加官方开源规则直链进行实时订阅与更新：
-
-```
-https://raw.githubusercontent.com/a742870158/ADHook-Release/main/rules/rules.json
-```
 
 ---
 

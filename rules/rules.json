@@ -1,0 +1,507 @@
+{
+  "id": 1001,
+  "name": "ADHook 官方精选通用去广告规则",
+  "version": 2,
+  "author": "ADHook",
+  "description": "精选主流应用开屏广告、横幅卡片与推广节点折叠规则（开源社区维护，支持在线拉取更新）",
+  "updateUrl": "https://raw.githubusercontent.com/waf2311/ADHook/main/rules/rules.json",
+  "updatedAt": 1740393600000,
+  "apps": [
+    {
+      "id": "com.mi.health",
+      "name": "小米运动健康",
+      "rules": [
+        {
+          "id": "mihealth_health_banner",
+          "name": "折叠健康页推广横幅列表",
+          "type": "res_id",
+          "targetValue": "healthBannerRecyclerView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_banner_announce",
+          "name": "折叠横幅公告条",
+          "type": "res_id",
+          "targetValue": "bannerAnnouncementView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_sport_banner",
+          "name": "折叠运动页横幅列表",
+          "type": "res_id",
+          "targetValue": "bannerRecyclerView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_banner_multi_style",
+          "name": "折叠多样式运营横幅视图",
+          "type": "class_name",
+          "targetValue": "MultipleStyleBannerView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_banner_operational",
+          "name": "折叠运营活动横幅视图",
+          "type": "class_name",
+          "targetValue": "OperationalBanner",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_banner_announcement_view",
+          "name": "折叠公告栏横幅组件",
+          "type": "class_name",
+          "targetValue": "AnnouncementBannerView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "mihealth_top_message",
+          "name": "移除顶部消息通知入口与红点",
+          "type": "text",
+          "targetValue": "消息通知",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.kugou.android.lite",
+      "name": "酷狗概念版",
+      "rules": [
+        {
+          "id": "kugou_player_widget",
+          "name": "折叠播放器悬浮广告挂件",
+          "type": "res_id",
+          "targetValue": "kg_player_widget_layout",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_player_vip",
+          "name": "折叠播放器免费领 VIP 推广卡片",
+          "type": "res_id",
+          "targetValue": "kg_player_get_vip_layout",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_player_vip_tip",
+          "name": "折叠播放器混淆推广提示 (dwh)",
+          "type": "res_id",
+          "targetValue": "dwh",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_discovery_free_ad",
+          "name": "折叠发现页免流广告条",
+          "type": "class_name",
+          "targetValue": "DiscoveryFreeModeAdsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_notice_ad",
+          "name": "折叠公告推广条",
+          "type": "class_name",
+          "targetValue": "NoticeAdsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_low_free_ad",
+          "name": "折叠低端免流推广卡片",
+          "type": "class_name",
+          "targetValue": "LowFreeAdsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_comment_gdt_ad",
+          "name": "折叠评论区优量汇推广",
+          "type": "class_name",
+          "targetValue": "CommentGDTAdsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_player_video_ad",
+          "name": "折叠播放器视频推广视图",
+          "type": "class_name",
+          "targetValue": "TmePlayerVideoAdsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_feev4_video",
+          "name": "折叠 FeeV4 推广卡片",
+          "type": "class_name",
+          "targetValue": "FeeV4PlayVideoView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "kugou_player_mask",
+          "name": "折叠播放器弹窗遮罩广告",
+          "type": "class_name",
+          "targetValue": "PlayerAdMaskView",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.android.thememanager",
+      "name": "小米主题壁纸",
+      "rules": [
+        {
+          "id": "theme_share",
+          "name": "隐藏详情页分享按钮",
+          "type": "res_id",
+          "targetValue": "share",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "theme_reward",
+          "name": "隐藏详情页悬赏广告激励入口",
+          "type": "res_id",
+          "targetValue": "reward",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "theme_ad_stub",
+          "name": "折叠详情页广告 ViewStub 占位",
+          "type": "res_id",
+          "targetValue": "ad_stub",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "theme_ad_title",
+          "name": "折叠详情页广告标题栏",
+          "type": "res_id",
+          "targetValue": "ad_title",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.lynkco.customer",
+      "name": "领克汽车",
+      "rules": [
+        {
+          "id": "lynkco_bottom_tabs",
+          "name": "隐藏底部 Tab 导航栏",
+          "type": "res_id",
+          "targetValue": "ly_tabs",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "lynkco_center_tab",
+          "name": "隐藏底栏中央悬浮车标",
+          "type": "res_id",
+          "targetValue": "iv_tab_center",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "lynkco_used_car_card",
+          "name": "折叠车控页官方二手车推广卡片",
+          "type": "res_id",
+          "targetValue": "view_usp_car_used_car",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.sup.android.superb",
+      "name": "皮皮虾",
+      "rules": [
+        {
+          "id": "ppx_banner_top",
+          "name": "移除首页顶部长条推广横幅",
+          "type": "res_id",
+          "targetValue": "com.sup.android.superb:id/banner_ad_container",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "ppx_red_packet",
+          "name": "移除首页悬浮红包挂件",
+          "type": "res_id",
+          "targetValue": "com.sup.android.superb:id/floating_red_packet_view",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "ppx_top_icon_dyw",
+          "name": "移除顶部右上角混淆推广图标 dyw",
+          "type": "res_id",
+          "targetValue": "dyw",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "ppx_top_icon_dyu",
+          "name": "移除顶部右上角混淆推广图标 dyu",
+          "type": "res_id",
+          "targetValue": "dyu",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "ppx_top_icon_dyx",
+          "name": "移除顶部右上角混淆推广图标 dyx",
+          "type": "res_id",
+          "targetValue": "dyx",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "ppx_faked_splash",
+          "name": "移除假开屏闪屏广告遮罩",
+          "type": "res_id",
+          "targetValue": "faked_splash_view",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.coolapk.market",
+      "name": "酷安",
+      "rules": [
+        {
+          "id": "coolapk_feed_sponsor",
+          "name": "折叠信息流头条商业赞助卡片",
+          "type": "class_name",
+          "targetValue": "com.coolapk.market.view.cardlist.CoolapkCardView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "coolapk_splash_skip",
+          "name": "隐藏开屏跳过遮罩占位",
+          "type": "class_name",
+          "targetValue": "CoolapkSplashView",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.autonavi.minimap",
+      "name": "高德地图",
+      "rules": [
+        {
+          "id": "amap_operate_widget",
+          "name": "消除地图悬浮运营活动挂件",
+          "type": "res_id",
+          "targetValue": "com.autonavi.minimap:id/operate_activity_widget",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "amap_floating_template",
+          "name": "消除地图右侧悬浮扫街推广挂件",
+          "type": "class_name",
+          "targetValue": "AJXTemplateContainer",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "amap_taxi_banner_text",
+          "name": "折叠打车页推广横幅文案",
+          "type": "text",
+          "targetValue": "了解更多",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "tv.danmaku.bili",
+      "name": "哔哩哔哩",
+      "rules": [
+        {
+          "id": "bili_mall_tab",
+          "name": "折叠底栏会员购与推广入口",
+          "type": "res_id",
+          "targetValue": "tv.danmaku.bili:id/tab_mall_container",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "bili_mine_vip",
+          "name": "折叠个人中心大会员中心推广卡片",
+          "type": "res_id",
+          "targetValue": "mine_vip_layout_refactoring",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "bili_game_entry",
+          "name": "隐藏首页右上角游戏中心图标",
+          "type": "text",
+          "targetValue": "游戏中心",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.smzdm.client.android",
+      "name": "什么值得买",
+      "rules": [
+        {
+          "id": "smzdm_swipe_area",
+          "name": "移除开屏摇一摇与滑动交互区域",
+          "type": "res_id",
+          "targetValue": "swipe_area",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "smzdm_cl_slide",
+          "name": "移除开屏滑动提示组件",
+          "type": "res_id",
+          "targetValue": "cl_slide",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "smzdm_player_view",
+          "name": "移除开屏视频广告播放容器",
+          "type": "res_id",
+          "targetValue": "player_view",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "smzdm_skip_click",
+          "name": "自动点击开屏跳过按钮",
+          "type": "res_id",
+          "targetValue": "tv_skip",
+          "action": "click",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.hupu.games",
+      "name": "虎扑",
+      "rules": [
+        {
+          "id": "hupu_dialog_close_iv",
+          "name": "自动点击推广弹窗右上角关闭按钮",
+          "type": "res_id",
+          "targetValue": "iv_close",
+          "action": "click",
+          "enabled": true
+        },
+        {
+          "id": "hupu_dialog_close_btn",
+          "name": "自动点击推广弹窗关闭控件",
+          "type": "res_id",
+          "targetValue": "btn_close",
+          "action": "click",
+          "enabled": true
+        },
+        {
+          "id": "hupu_ad_tag",
+          "name": "折叠广告标签节点",
+          "type": "res_id",
+          "targetValue": "tv_tag",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.ss.android.ugc.aweme",
+      "name": "抖音",
+      "rules": [
+        {
+          "id": "douyin_pendant_tfg",
+          "name": "消除首页悬浮活动挂件 tfg",
+          "type": "res_id",
+          "targetValue": "tfg",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "douyin_pendant_jvo",
+          "name": "消除首页悬浮活动挂件 jvo",
+          "type": "res_id",
+          "targetValue": "jvo",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "douyin_pendant_jvp",
+          "name": "消除首页悬浮活动挂件 jvp",
+          "type": "res_id",
+          "targetValue": "jvp",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "douyin_fission_widget",
+          "name": "消除裂变红包悬浮挂件",
+          "type": "class_name",
+          "targetValue": "FissionWidget",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "douyin_redpacket_widget",
+          "name": "消除现金红包推广挂件",
+          "type": "class_name",
+          "targetValue": "RedPacketWidget",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "com.xiaomi.market",
+      "name": "小米应用商店",
+      "rules": [
+        {
+          "id": "xiaomi_market_hotwords",
+          "name": "折叠搜索框商业热词轮播条",
+          "type": "class_name",
+          "targetValue": "VerticalHotWordsView",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "xiaomi_market_phone_clear",
+          "name": "隐藏我的页面手机清理推广入口",
+          "type": "res_id",
+          "targetValue": "phone_clear_layout",
+          "action": "collapse",
+          "enabled": true
+        },
+        {
+          "id": "xiaomi_market_uninstall",
+          "name": "隐藏我的页面冗余应用卸载卡片",
+          "type": "res_id",
+          "targetValue": "mine_uninstall_app_layout",
+          "action": "collapse",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

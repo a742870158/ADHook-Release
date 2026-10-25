@@ -52,6 +52,12 @@
 3. 打开 LSPosed 管理器，在「模块」中启用 **ADHook** 并勾选需要去广告的目标应用作用域；
 4. 强退目标应用重新打开，即可享受纯净无广告体验。
 
+> [!IMPORTANT]
+> ### 📢 重要提示：关于作用域勾选与去广告范围
+> - **深度定制 vs 通用托管**：下方列表中已声明包名的应用拥有专属的深度逆向与定制去广告实现（如冷热开屏秒开、底栏精简、特定信息流过滤、去水印等）；
+> - **去广告不仅限于声明的应用**：ADHook 的去广告与界面净化能力**绝不仅限于**这几个预设应用！
+> - **任意 App 自由去广告**：请在 **LSPosed 管理器的模块作用域中，勾选任意想要去除广告的应用**。被勾选的应用将自动激活底层通用广告联盟断源（穿山甲/优量汇/快手/AdMob等），并且可在应用内随心开启**原生可视化悬浮拾取器**，自由框选、测试并保存屏蔽规则，消除界面中的任意广告卡片与空白！
+
 ---
 
 ## 🚀 核心特性
@@ -62,7 +68,7 @@
   - **全局**：一键总控穿山甲 (Pangle)、腾讯优量汇 (GDT)、快手 (Kwad)、百度移动广告、谷歌 AdMob 等 5 大广告联盟底层断源。
   - **规则**：管理自定义规则与订阅条目，支持一键导出、导入与滑动删除。
   - **应用**：全盘已安装应用极速搜索，深度定制适配方案优先置顶。
-  - **关于**：框架运行状态、健康度诊断与版本信息。
+  - **关于**：框架运行状态、版本信息、官方 QQ 交流群与**一键检测 GitHub 最新 Release 版本更新（支持直接下载升级与进度展示）**。
 - **通用应用零配置自动托管**：只要在 LSPosed 作用域中勾选任意第三方应用，无需硬编码预置，自动挂载底层广告联盟断源与悬浮窗拾取器。
 
 ### 2. 🔍 原生视图可视化拾取器 (Visual Element Picker)
@@ -108,4 +114,5 @@
 
 ## 💬 问题反馈与交流
 
-如果您在使用过程中遇到任何规则失效、界面误伤或希望适配新应用，欢迎随时提交 [**GitHub Issues**](https://github.com/a742870158/ADHook-Release/issues)！
+- **官方 QQ 交流群**：`1132195799`（[👉 点击直达加入群聊【ADHook】](https://qun.qq.com/universal-share/share?ac=1&authKey=N2ORngE1ODWIODTIXCymZ9YQlcq66n67CmPnBQnj7zGjaboeLUjrB5gUOPTsAvtP&busi_data=eyJncm91cENvZGUiOiIxMTMyMTk1Nzk5IiwidG9rZW4iOiJOR3liT1JoL1owck4zK1pYQ29oNnJ5d2RlZUJxNmFKaXgyZ3h2dDF5ekgwdzFMeEJmSThzeU1TdVg5SHpMQVJSIiwidWluIjoiNzQyODcwMTU4In0%3D&data=EmqDA1owmF6yNkZ6PJdJKkpoLPZw7EKq90RUlaOQoDGQFvmm1Zq1Fp_QFoX4_GHMPJM1h0ea0c9gWLW_tpmB7Q&svctype=4&tempid=h5_group_info)）
+- **GitHub Issues**：如果您在使用过程中遇到任何规则失效、界面误伤或希望适配新应用，欢迎随时提交 [**GitHub Issues**](https://github.com/a742870158/ADHook-Release/issues)！

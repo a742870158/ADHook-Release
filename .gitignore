@@ -1,0 +1,4 @@
+*.apk
+*.sha256
+.gradle/
+build/
